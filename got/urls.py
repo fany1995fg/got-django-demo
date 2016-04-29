@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
     url(r'^houses/(?P<house_id>\d+)/$', views.house_detail, name='house_detail'),
+    url(r'^houses/(?P<house_id>\d+)/character/(?P<character_id>\d+)/(?P<action>(like|dislike))/$', views.character_action, name='character_action'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
