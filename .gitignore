@@ -8,6 +8,9 @@
 *.db
 *.sqlite3
 
+# Media files
+media/
+
 ### SublimeText ###
 # cache files for sublime text
 *.tmlanguage.cache
