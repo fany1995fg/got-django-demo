@@ -1,0 +1,18 @@
+{% extends 'characters/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+  {% for house in houses %}
+  <div class="col-md-3">
+    <div class="thumbnail">
+      <img class="img" src="{% get_media_prefix %}{{ house.logo }}" alt="{{ house.name }}">
+      <div class="caption">
+        <h3>{{ house.name }}</h3>
+        <p>
+        <a href="{% url 'house_detail' house.id %}" class="btn btn-primary" role="button">Characters</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

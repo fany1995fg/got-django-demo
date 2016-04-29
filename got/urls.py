@@ -18,6 +18,10 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
 
+from characters import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^$', views.home, name='home'),
+    url(r'^houses/(?P<house_id>\d+)/$', views.house_detail, name='house_detail'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

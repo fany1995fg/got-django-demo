@@ -24,3 +24,7 @@ class Character(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def is_die(self):
+        return self.dislikes_quantity_to_die <= self.dislikes
