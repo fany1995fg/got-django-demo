@@ -63,8 +63,8 @@ Luego de ejecutar este comando lo único que faltaría para que nuestros modelos
 
 **ls** -> listas las carpetas que están en la carpeta actual (en Linux)
 
-Link
+Recursos:
 ------------
-[SLIDES utilizadas en clase](https://drive.google.com/file/d/0BwzkFJZ3lzGOYkJnZDlTYzhLR1U/view?usp=sharing)  
+[SLIDES utilizados en clase](https://drive.google.com/file/d/0BwzkFJZ3lzGOYkJnZDlTYzhLR1U/view?usp=sharing)  
 [Introducción a Django](https://docs.google.com/presentation/d/1cpCbjrA5cv9igtz76xjcyjxMbxnqfrJRu6Xb02LzV98/edit?usp=sharing)  
 [Tutorial de Django Girls en español](http://tutorial.djangogirls.org/es/)  
